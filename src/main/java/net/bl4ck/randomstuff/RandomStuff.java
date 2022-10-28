@@ -1,6 +1,7 @@
 package net.bl4ck.randomstuff;
 
 import com.mojang.logging.LogUtils;
+import net.bl4ck.randomstuff.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,6 +19,8 @@ public class RandomStuff {
 
     public RandomStuff() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
