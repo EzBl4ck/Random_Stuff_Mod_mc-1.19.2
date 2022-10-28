@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "group": "sticks",
+  "key": {
+    "#": {
+      "tag": "minecraft:stone"
+    }
+  },
+
+  "result": {
+    "count": 4,
+    "item": "randomstuff:stone_stick"
+  }
+}
